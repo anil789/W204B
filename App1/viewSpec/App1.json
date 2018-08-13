@@ -18,10 +18,11 @@
           "type" : "view"
         }
       ],
+      "cssClass" : "trillo-container-row",
       "designTimeHeight" : "49px",
+      "height" : "60px",
       "tag" : "templateE",
-      "type" : "row",
-      "height" : "60px"
+      "type" : "row"
     },
     {
       "name" : "mainRow",
@@ -42,7 +43,7 @@
               "type" : "view"
             }
           ],
-          "cssClass" : "left-column",
+          "cssClass" : "left-column trillo-container-column",
           "designTimeWidth" : "250px",
           "tag" : "templateE",
           "type" : "column"
@@ -54,10 +55,24 @@
             {
               "name" : "titleBar",
               "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "Subscribers_2",
+                  "autoNav" : false,
+                  "css" : {
+                    "flex-grow" : 1
+                  },
+                  "reference" : "Subscribers",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_/home_",
+                  "type" : "view"
+                }
+              ],
               "css" : {
                 "designTimeHeight" : "30px",
                 "padding" : "5px 20px"
               },
+              "cssClass" : "trillo-container-row",
               "tag" : "templateE",
               "type" : "row"
             },
@@ -77,6 +92,7 @@
                   "type" : "view"
                 }
               ],
+              "cssClass" : "trillo-container-row",
               "tag" : "userDefined",
               "trigger" : "_initial_/SideBar:charts",
               "type" : "row"
@@ -97,6 +113,7 @@
                   "type" : "view"
                 }
               ],
+              "cssClass" : "trillo-container-row",
               "tag" : "userDefined",
               "trigger" : "_initial_/SideBar:charts",
               "type" : "row"
@@ -124,6 +141,7 @@
                           "type" : "view"
                         }
                       ],
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/SideBar:sales",
                       "type" : "row"
@@ -144,11 +162,13 @@
                           "type" : "view"
                         }
                       ],
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/SideBar:sales",
                       "type" : "row"
                     }
                   ],
+                  "cssClass" : "trillo-container-column",
                   "flexGrow" : "1",
                   "type" : "column"
                 },
@@ -171,11 +191,13 @@
                           "type" : "view"
                         }
                       ],
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/SideBar:alerts",
                       "type" : "row"
                     }
                   ],
+                  "cssClass" : "trillo-container-column",
                   "flexGrow" : "1",
                   "type" : "column"
                 },
@@ -196,6 +218,20 @@
                     {
                       "name" : "Row_1",
                       "autoNav" : false,
+                      "childrenSpecs" : [
+                        {
+                          "name" : "BarC_1",
+                          "autoNav" : false,
+                          "css" : {
+                            "flex-grow" : 1
+                          },
+                          "reference" : "BarC",
+                          "tag" : "userDefined",
+                          "trigger" : "_initial_/home_",
+                          "type" : "view"
+                        }
+                      ],
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/home_",
                       "type" : "row"
@@ -204,6 +240,7 @@
                       "name" : "Row_2",
                       "alignment" : "left",
                       "autoNav" : false,
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/home_",
                       "type" : "row"
@@ -212,6 +249,7 @@
                       "name" : "Row_3",
                       "alignment" : "left",
                       "autoNav" : false,
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/home_",
                       "type" : "row"
@@ -228,15 +266,18 @@
                             {
                               "name" : "Row_5",
                               "autoNav" : false,
+                              "cssClass" : "trillo-container-row",
                               "tag" : "userDefined",
                               "trigger" : "_initial_/home_",
                               "type" : "row"
                             }
                           ],
+                          "cssClass" : "trillo-container-column",
                           "flexGrow" : "1",
                           "type" : "column"
                         }
                       ],
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/home_",
                       "type" : "row"
@@ -245,15 +286,18 @@
                       "name" : "Row_9",
                       "alignment" : "left",
                       "autoNav" : false,
+                      "cssClass" : "trillo-container-row",
                       "tag" : "userDefined",
                       "trigger" : "_initial_/home_",
                       "type" : "row"
                     }
                   ],
+                  "cssClass" : "trillo-container-column",
                   "flexGrow" : "1",
                   "type" : "column"
                 }
               ],
+              "cssClass" : "trillo-container-row",
               "designTimeHeight" : "100px",
               "flexGrow" : "1",
               "main" : true,
@@ -261,6 +305,7 @@
               "type" : "row"
             }
           ],
+          "cssClass" : "trillo-container-column",
           "flexGrow" : "1",
           "main" : true,
           "minWidth" : "320px",
@@ -268,11 +313,17 @@
           "type" : "column"
         }
       ],
-      "cssClass" : "light-content-area main-row",
+      "cssClass" : "light-content-area main-row trillo-container-row",
       "flexGrow" : "1",
       "main" : true,
       "tag" : "templateE",
       "type" : "row"
     }
-  ]
+  ],
+  "css" : {
+    "display" : "flex",
+    "flex-direction" : "column",
+    "flex-grow" : "1"
+  },
+  "cssClass" : "trillo-container"
 }
